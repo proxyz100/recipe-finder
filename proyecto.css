@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Nunito:wght@300&family=Permanent+Marker&display=swap');
+
+body{
+    background-color: #EFF1F3;
+    align-items: center;
+}
+
+.titles > h1 {
+    font-family: 'Permanent Marker', cursive;
+    height: 35px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #696773;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    margin-left: 31%;
+}
+/*me falta que no se mueva titulos*/
+
+.meals {
+    display: grid;
+    max-width: 774px;
+    margin: auto;
+    grid-template: repeat(2, 50%) / repeat(3, 31%);
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+/*.meals .meals-card .meals-content h1{
+font-family: 'Permanent Marker', cursive;
+    height: 35px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #696773;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;    
+} */  
+.meals .meals-card p{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 14px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:center;
+    margin-left: 21%;
+    /*no entiendo por que no se centra, 
+    le puse ese último renglón para que se centrara*/
+}
+
+.meals .meals-card img{
+    box-sizing: border-box;
+    height: 178;
+    width: 223px;   
+    background-color: #fff;
+    border:solid #FFFFFF;
+    padding-bottom: 45px;   
+    border-radius: 10px 10px ;
+    margin-bottom: -55px;    
+}
+
+.slogan{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 3%;
+}
+
+.slogan p{
+    color: #FFFFFF;
+    size: 30px;
+    margin-top: -95px;
+    font-size: 36px;
+    font-family: 'Neucha', cursive;
+}
+
+.slogan img {
+    height: 119px;
+    width: 700px;
+}
+    /*me falta el trasluciso imagen*/
+
+.meals2 {
+    display: grid;
+    max-width: 774px;
+    margin: auto;
+    grid-template: repeat(2, 50%) / repeat(3, 31%);
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.meals2 .meals2-card p{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 14px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:center;
+    margin-left: 21%;
+    /*no entiendo por que no se centra, 
+    le puse ese último renglón para que se centrara*/
+}
+
+.meals2 .meals2-card img{
+    box-sizing: border-box;
+    height: 178;
+    width: 223px;   
+    background-color: #fff;
+    border:solid #FFFFFF;
+    padding-bottom: 45px;   
+    border-radius: 10px 10px ;
+    margin-bottom: -55px;    
+}
+
+footer{
+    margin-top: 3%;
+    background-color:#FED766;
+    height: 113px;
+    width: 100%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+.footer-components img{
+    height: 47px;
+    font-family: 'Nunito', sans-serif;
+}
+    
+.footer-components p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+
+@media (max-width:320px) {
+}
+
+
+/* otro contenedor arriba con transparencia
+ */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+
