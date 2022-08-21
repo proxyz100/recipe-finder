@@ -2,55 +2,49 @@
 
 body{
     background-color: #EFF1F3;
-    align-items: center;
 }
 
-.titles > h1 {
-    font-family: 'Permanent Marker', cursive;
-    height: 35px;
-    font-size: 24px;
-    margin-bottom: 5px;
-    color: #696773;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 35px;
-    margin-left: 31%;
+.meals {
+    display: flex;
+    flex-direction: column;
+    max-width: 774px;
+    margin: auto;
 }
 /*me falta que no se mueva titulos*/
 
-.meals {
-    display: grid;
-    max-width: 774px;
-    margin: auto;
-    grid-template: repeat(2, 50%) / repeat(3, 31%);
-    align-items: center;
-    padding-bottom: 5px;
-}
-
-/*.meals .meals-card .meals-content h1{
-font-family: 'Permanent Marker', cursive;
+.title{
+    font-family: 'Permanent Marker', cursive;
     height: 35px;
     font-size: 24px;
-    margin-bottom: 5px;
     color: #696773;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px;    
-} */  
-.meals .meals-card p{
+    line-height: 35px; 
+    margin-left: 6%;
+}
+
+.meals-card{ 
+    display: grid;
+    grid-template: repeat(2, 50%) / repeat(3, 31%);
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.meals-content p{
     font-family: 'Permanent Marker', cursive;
     font-size: 14px;
     color: #000000;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-align:center;
-    margin-left: 21%;
-    /*no entiendo por que no se centra, 
+    text-align: center;
+    margin-left: 22%;
+     /*no entiendo por que no se centra, 
     le puse ese último renglón para que se centrara*/
 }
 
-.meals .meals-card img{
+.meals-content img{
     box-sizing: border-box;
     height: 178;
     width: 223px;   
@@ -77,7 +71,9 @@ font-family: 'Permanent Marker', cursive;
 
 .slogan img {
     height: 119px;
-    width: 700px;
+    width: 700px
+    
+    ;
 }
     /*me falta el trasluciso imagen*/
 
@@ -141,6 +137,24 @@ footer{
 
 
 @media (max-width:320px) {
+    .title{
+        font-size: 14px;
+    margin-left: 15%;
+    }
+
+    .meals {
+    margin: auto;
+    }
+    
+    .meals-card{
+    grid-template: repeat(3, 33%) /repeat(2 , 48%);
+    }
+
+    .meals-content img{
+    height: 111;
+    width: 139.69px;
+    }
+    
 }
 
 
