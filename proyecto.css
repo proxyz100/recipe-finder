@@ -5,8 +5,6 @@ body{
 }
 
 .meals {
-    display: flex;
-    flex-direction: column;
     max-width: 774px;
     margin: auto;
 }
@@ -20,15 +18,20 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: 35px; 
-    margin-left: 6%;
 }
 
 .meals-card{ 
     display: grid;
-    grid-template: repeat(2, 50%) / repeat(3, 31%);
+    grid-template: repeat(2, 50%) / repeat(3, 33%);
     align-items: center;
-    padding-bottom: 5px;
-    margin-top: 15px;
+}
+
+.meals-content {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #aaaaaa;
 }
 
 .meals-content p{
@@ -39,20 +42,14 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
-    margin-left: 22%;
-     /*no entiendo por que no se centra, 
-    le puse ese último renglón para que se centrara*/
+}
+
+.meals-content figure {
+    margin: 0;
 }
 
 .meals-content img{
-    box-sizing: border-box;
-    height: 178;
-    width: 223px;   
-    background-color: #fff;
-    border:solid #FFFFFF;
-    padding-bottom: 45px;   
-    border-radius: 10px 10px ;
-    margin-bottom: -55px;    
+    width: 100%;   
 }
 
 .slogan{
